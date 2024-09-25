@@ -1,0 +1,187 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const burgerMenu = document.querySelector('.burger-menu');
+      const navLinks = document.querySelector('.nav-links');
+      const navItems = document.querySelectorAll('.nav-links li a');
+
+      burgerMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+
+      navItems.forEach(item => {
+        item.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <span>Barbearia</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#team">Equipe</a></li>
+        <li><a href="#footer">Contato</a></li>
+      </ul>
+      <button class="burger-menu" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section>
+
+    </section>
+    <section class="who-we-are" id="about">
+      <div>
+        <h3>Sobre nós</h3>
+      </div>
+      <div>
+        <p>
+          Alunos da Universidade de Exelência, Unex, estamos disponibilizando o nosso trabalho de barbearia para a comunidade.
+        </p>
+      </div>
+    </section>
+    <section class="our-services" id="services">
+      <div class="services-container">
+        <div class="services-item">
+          <div class="card-content">
+              <div class="icon">
+                  <img src="./img/barber-shop-svgrepo-com.svg" alt="Shaving Icon">
+              </div>
+              <h2>Barba</h2>
+              <p>Preço: <span>R$15</span></p>
+          </div>
+        </div>
+
+        <div class="services-item">
+          <div class="card-content">
+              <div class="icon">
+                  <img src="./img/tesoura.png" alt="Shaving Icon">
+              </div>
+              <h2>Corte</h2>
+              <p>Preço: <span>R$25</span></p>
+          </div>
+        </div>
+      </div>
+      <button onclick="window.open('https://www.instagram.com/barbeariagenesis11')">Mais sobre nós</button>
+    </section>
+    <section class="gallery-section" id="gallery">
+      <h1>Galeria</h1>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="./img/img3.jpeg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+          <img src="./img/img2.jpeg" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+          <img src="./img/img5.jpeg" alt="Image 4">
+        </div>
+        <div class="gallery-item">
+          <img src="./img/img4.jpeg" alt="Image 3">
+        </div>
+        <div class="gallery-item">
+          <img src="./img/img7.jpeg" alt="Image 3">
+        </div>
+        <div class="gallery-item">
+          <img src="./img/img6.jpeg" alt="Image 4">
+        </div>
+        <div class="gallery-item">
+          <img src="./img/img8.jpeg" alt="Image 3">
+        </div>
+          <div class="gallery-item">
+          <img src="./img/img9.jpeg" alt="Image 3">
+        </div>
+      </div>
+    </section>
+    <section class="team-section" id="team">
+      <h3>Conheça nossa equipe</h3>
+      <div class="team-container">
+        <div class="team-member">
+          <h2>Fernando Gustavo</h2>
+        </div>
+
+        <div class="team-member">
+          <h2>Márcio Vinícius da Silva</h2>
+        </div>
+
+        <div class="team-member">
+          <h2>João Paulo Rosa</h2>
+        </div>
+
+        <div class="team-member">
+          <h2>Maciel Francisco</h2>
+        </div>
+
+        <div class="team-member">
+          <h2>Carlos Henrique Santos</h2>
+        </div>
+
+        <div class="team-member">
+          <h2>Jonatas de Jesus Souza</h2>
+        </div>
+
+        <div class="team-member">
+          <h2>Aeverton Santos</h2>
+        </div>
+
+        <div class="team-member">
+          <h2>Felipe Souza Teixeira</h2>
+        </div>
+
+        <div class="team-member">
+          <h2>Fredson Pereira</h2>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="footer">
+    <div>
+      <ul class="footer-list">
+        <li class="footer-list-item"><a href="#">Inicio</a></li>
+        <li class="footer-list-item"><a href="#">Sobre</a></li>
+        <li class="footer-list-item"><a href="#">Galeria</a></li>
+      </ul>
+    </div>
+    <div class="footer-contacts">
+      <h5 class="footer-contacts-title">Contatos</h5>
+      <div class="phone">
+        <p> Telefone: (11) 9999-9999</p>
+        <img src="./img/phone.svg" alt="phone">
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
