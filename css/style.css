@@ -291,8 +291,11 @@ header {
 }
 
 .footer-contacts{
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: start;
+  justify-content: center;;
 }
 
 .footer-contacts-title{
@@ -399,3 +402,17 @@ header {
   }
 }
 
+.instagram {
+  display: flex;
+  justify-content: center;
+}
+
+.instagram-link {
+  background-color: #f09433;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-bottom: 30px;
+}
